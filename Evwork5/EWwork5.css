@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+.sidebar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 270px;
+    height: 620px;
+    left: -290px;
+    transition: 1s;
+    border: 1px solid gray;
+}
+
+.sidebar .menu {
+    position: relative;
+    margin: 0 auto;
+    font-size: 20px;
+    width: 280px;
+    background: black;
+    color: white;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    text-align: center;
+    border: 1px gray;
+}
+
+.sidebar.active {
+    left: 0px;
+}
+
+.Menuline {
+    width: 50px;
+    height: 620px;
+    background: white;
+    display: flex;
+    float: left;
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.menu:hover {
+    background: black;
+    color: white;
+    width: 300px;
+    transform: scale(1.2);
+    padding: 0 auto;
+    font-size: 30px;
+    border-bottom: 1px solid white;
+}
+
+ul {
+    display: none;
+}
+
+ul li {
+    position: relative;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 20px;
+    list-style: none;
+    font-size: 15px;
+}
